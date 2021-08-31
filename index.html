@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="text-capitalize text-dark" lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -82,14 +82,46 @@
                     <div class="row" style="border-top-style: none;background: #eee9e9;">
                         <div class="col">
                             <h6 style="font-size: 20px;"><i class="fa fa-user" style="color: #009688;"></i>&nbsp; <strong>Contact</strong></h6>
-                            <div>
-                                <form data-bss-recipient="f783af4813c578fc4baefdb626341ff0" data-bss-subject="CV inspiration from w3school" data-bss-redirect-url="index.html">
-                                    <div class="form-group"><input class="form-control" type="text" placeholder="Your name..."></div>
-                                    <div class="form-group"><input class="form-control" type="email" placeholder="Email"></div>
-                                    <div class="form-group"><textarea class="form-control" placeholder="Message..."></textarea></div>
-                                    <div class="form-group text-right"><button class="btn btn-info active" type="submit" style="width: 100%;">Send</button></div>
-                                </form>
-                            </div>
+                            <div>	<script
+		src="https://code.jquery.com/jquery-3.4.1.js"
+		integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+		crossorigin="anonymous"></script>
+	<script>
+		function SubForm (){
+			$.ajax({
+				url:"https://api.apispreadsheets.com/data/17554/",
+				type:"post",
+				data:$("#myForm").serializeArray(),
+				success: function(){
+					alert("Form Data Submitted :)")
+				},
+				error: function(){
+					alert("There was an error :(")
+				}
+			});
+		}
+	</script>
+<body>
+  <form id="myForm">
+    <label>Full Name</label>
+    <br/>
+    <input name="full_name" />
+    <br/>
+    <label>Email</label>
+    <br/>
+    <input name="email" />
+    <br/>
+      <label>Phone Number</label><BR><input type="tel" name="number" />
+    <br/>
+    
+    <label>Message</label>
+    <br/>
+    <textarea name="message">
+    </textarea>
+    <br/>
+    <br/>
+  </form>
+  <button onclick="SubForm()" >Submit</button></div>
                             <hr>
                         </div>
                     </div>
@@ -99,24 +131,21 @@
                 <div style="background: #ffffff;">
                     <div>
                         <div class="col">
-                            <h2 class="work-h2"><span><i class="fa fa-suitcase" style="color: #009688;"></i></span>&nbsp;Under Graduation(UG)</h2>
-                            <h4 style="padding: 12px;">BTECH(ECE)<br></h4>
-                            <h6 style="color: #009688;padding: 12px;"><i class="fa fa-calendar"></i>&nbsp; &nbsp;AUG 2018 -&nbsp;<button class="btn btn-primary" type="button" style="background: #009688;width: 80px;padding: 0px;">Current</button></h6>
-                            <p style="padding: 20px;"><strong>COLLEGE NAME:</strong>&nbsp;Dadi institute of engineering and technology(U4),AKP Visakhapatnam Andhra Pradesh, 531002.&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <strong>University: </strong>Jawaharlal Nehru Technological University Kakinada&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <strong>Branch &amp; Course:</strong>&nbsp;BTECH(ELECTRONICS&nbsp; AND COMMUNICATION )&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <strong>TOTAL CPGA: </strong>7.19&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</p>
+                            <h2 class="work-h2"><span><i class="fa fa-suitcase" style="color: #009688;"></i></span>&nbsp;EDUCATION DETAILS</h2>
+                            <h4 style="padding: 12px;">BACHELOR DEGREE<br></h4>
+                            <h6 style="color: #009688;padding: 12px;"><i class="fa fa-calendar"></i>&nbsp; &nbsp;AUG 2018 - 2021</h6><p style="padding: 20px;"><strong>COLLEGE NAME:</strong> Dadi institute of engineering and technology(U4),AKP Visakhapatnam Andhra Pradesh, 531002.<br><strong>University: </strong>Jawaharlal Nehru Technological University Kakinada<br><strong>Branch & Course:</strong> BTECH(ELECTRONICS  AND COMMUNICATION)<br><strong>TOTAL CPGA: </strong>7.19                  </p>
                         </div>
                     </div>
                     <div>
                         <div class="col">
                             <h4 style="padding: 12px;">DIPLOMA</h4>
-                            <h6 style="color: #009688;padding: 12px;"><i class="fa fa-calendar"></i>&nbsp; &nbsp;Oct 2015 - March 2018</h6>
-                            <p style="padding: 12px;"><strong>COLLEGE NAME: </strong>Government Polytechnic, Anaparthy.&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <strong>BOARD: </strong>SBTET Andhra Pradesh&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <strong>BRANCH: </strong>Electronics and communication engineering&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<strong>TOTAL PERCENTAGE: </strong>72.4%</p>
+                            <h6 style="color: #009688;padding: 12px;"><i class="fa fa-calendar"></i>&nbsp; &nbsp;Oct 2015 - March 2018</h6><p style="padding: 12px;"><strong>COLLEGE NAME: </strong>Government Polytechnic, Anaparthy.<BR> <strong>BOARD: </strong>SBTET Andhra Pradesh<BR><strong>BRANCH: </strong>Electronics and communication engineering<br><strong>TOTAL PERCENTAGE: </strong>72.4%</p>
                         </div>
                     </div>
                     <div>
                         <div class="col">
                             <h4 style="padding: 12px;">CLASS X<br></h4>
-                            <h6 style="color: #009688;padding: 12px;"><i class="fa fa-calendar"></i>&nbsp; &nbsp;Mar 2015</h6>
-                            <p style="padding: 12px;"><strong>SCHOOL NAME:</strong>&nbsp;JL EM HIGH SCHOOL Anakapalle , Visakhapatnam.&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <strong>BOARD: </strong>Board of secondary education ,Andhra pradesh.&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <strong>CPGA:</strong>&nbsp;8.8</p>
+                            <h6 style="color: #009688;padding: 12px;"><i class="fa fa-calendar"></i>&nbsp; &nbsp;Mar 2015</h6><p style="padding: 12px;"><strong>SCHOOL NAME:</strong> JL EM HIGH SCHOOL Anakapalle , Visakhapatnam.<br><strong>BOARD: </strong>Board of secondary education ,Andhra pradesh.<br><strong>CPGA:</strong> 8.8</p>
                         </div>
                     </div>
                 </div>
@@ -125,8 +154,7 @@
                         <div class="col">
                             <h2 class="work-h2"><span><i class="fa fa-suitcase" style="color: #009688;"></i></span>&nbsp;PROJECTS</h2>
                             <h4 style="padding: 12px;">SOCIAL DISTANCE ID CARD</h4>
-                            <h6 style="color: #009688;padding: 12px;"><i class="fa fa-calendar"></i>&nbsp; &nbsp;AUG 2020</h6>
-                            <p style="padding: 12px;">Social Distancing is needed to maintain at public areas such as schools,<br>Colleges, Markets etc. Our proposed system is designed for students, which is<br>implemented in their ID cards. This ID card detects the distance between the<br>person-to-person if both are come nearer it gives the sound alert. In this<br>device we are measuring body temperature and pulse rate of the person when the<br>student give his/her attendance all the details including body temperature and<br>pulse rate will be updated to server using IoT Technology.<br></p>
+                            <h6 style="color: #009688;padding: 12px;"><i class="fa fa-calendar"></i>&nbsp; &nbsp;AUG 2020</h6><p style="padding: 12px;">Social Distancing is needed to maintain at public areas such as schools,<br />Colleges, Markets etc. Our proposed system is designed for students, which is<br />implemented in their ID cards. This ID card detects the distance between the<br />person-to-person if both are come nearer it gives the sound alert. In this<br />device we are measuring body temperature and pulse rate of the person when the<br />student give his/her attendance all the details including body temperature and<br />pulse rate will be updated to server using IoT Technology.<br /></p>
                         </div>
                     </div>
                     <div>
@@ -147,7 +175,6 @@
     </div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/smart-forms.min.js"></script>
 </body>
 
 </html>
